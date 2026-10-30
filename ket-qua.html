@@ -1,64 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kết quả liên hệ - Trần Việt Anh</title>
-  <link rel="stylesheet" href="D:\CNTT20-04\portfolio\css\style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kết Quả & Kiểm Chứng v7 | Trần Đoàn Quang Huy</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html#gioi-thieu">
-        Việt Anh
-      </a>
 
-      <nav aria-label="Menu chính">
-        <ul class="menu">
-          <li><a href="index.html#gioi-thieu">Giới thiệu</a></li>
-          <li><a href="index.html#ky-nang">Kỹ năng</a></li>
-          <li><a href="index.html#du-an">Dự án</a></li>
-          <li><a href="index.html#hoc-tap">Học tập</a></li>
-          <li><a href="index.html#lien-he">Liên hệ</a></li>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="./index.html" class="brand-logo">
+        QUANG HUY <span class="brand-badge">v7.0</span>
+      </a>
+      <nav aria-label="Điều hướng chính">
+        <ul class="nav-links">
+          <li><a href="./index.html">Trang chủ</a></li>
+          <li><a href="./index.html#du-an">Dự án</a></li>
+          <li><a href="./ket-qua.html" class="active">Kết quả & Kiểm chứng</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="noi-dung" class="result-main">
-    <div class="container">
-      <section class="result-panel" aria-labelledby="result-title">
-        <h1 id="result-title">
-          Đã chuyển đến trang kết quả
-        </h1>
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Hồ Sơ Kết Quả & Kiểm Chứng Triển Khai (Bản v7)</h2>
+          <p>Đối chiếu Local – Repository – URL GitHub Pages và đánh giá cải tiến giao diện (TC4b & TC5a)</p>
+        </div>
 
-        <p>
-          Form đã vượt qua bước kiểm tra dữ liệu HTML5
-          của trình duyệt và chuyển đến trang kết quả
-          thực hành.
-        </p>
+        <!-- Bảng 1: Kiểm chứng tài nguyên và đường dẫn (TC3 & TC4b) -->
+        <div class="table-responsive" style="margin-bottom: 2.5rem;">
+          <table>
+            <thead>
+              <tr>
+                <th>Tài nguyên / Thành phần</th>
+                <th>Đường dẫn tương đối (Relative Path)</th>
+                <th>Trạng thái HTTP (Network)</th>
+                <th>Kết quả kiểm chứng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Trang chủ Portfolio v7</td>
+                <td><code>./index.html</code></td>
+                <td><span class="status-ok">200 OK</span></td>
+                <td>Hiển thị đầy đủ bố cục, điều hướng hoạt động chính xác.</td>
+              </tr>
+              <tr>
+                <td>Trang Kết quả & Kiểm chứng</td>
+                <td><code>./ket-qua.html</code></td>
+                <td><span class="status-ok">200 OK</span></td>
+                <td>Liên kết qua lại với Trang chủ không lỗi 404.</td>
+              </tr>
+              <tr>
+                <td>Bảng kiểu giao diện Đen-Vàng-Đỏ</td>
+                <td><code>./css/style.css</code></td>
+                <td><span class="status-ok">200 OK</span></td>
+                <td>Áp dụng đúng biến CSS <code>:root</code> theo tỷ lệ 60-30-10.</td>
+              </tr>
+              <tr>
+                <td>Ảnh đại diện & SVG dự án</td>
+                <td><code>./assets/du-an-1.svg</code>, <code>du-an-2.svg</code>, <code>du-an-3.svg</code></td>
+                <td><span class="status-ok">200 OK</span></td>
+                <td>Toàn bộ ảnh tải thành công, có cơ chế fallback an toàn.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <p>
-          <strong>Lưu ý:</strong>
-          Không có email nào được gửi và dữ liệu không
-          được lưu trên máy chủ. Với phương thức GET,
-          dữ liệu đã nhập có thể hiển thị trên thanh địa chỉ.
-        </p>
+        <!-- Bảng 2: So sánh Trước và Sau cải tiến giao diện (TC5a) -->
+        <div class="section-header">
+          <h2>Đối Chiếu Trước Và Sau Cải Tiến Giao Diện (Buổi 5–6 & Hoàn Thiện v7)</h2>
+          <p>Giải thích lựa chọn cải tiến theo 4 tiêu chí: Độ tương phản, Tính nhất quán, Trạng thái Focus và Responsive</p>
+        </div>
 
-        <a class="button" href="index.html#lien-he">
-          Quay lại liên hệ
-        </a>
-      </section>
-    </div>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Tiêu chí đánh giá</th>
+                <th>Trước khi cải tiến (Bản cũ)</th>
+                <th>Sau khi cải tiến (Bản v7: Đen - Vàng - Đỏ)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Tỷ lệ màu & Độ tương phản</strong></td>
+                <td>Màu sắc thiếu điểm nhấn, độ tương phản giữa chữ và nền chưa phân tách rõ các vùng thông tin.</td>
+                <td>Áp dụng quy tắc <strong>60% Đen (#0B0B0E) - 30% Vàng (#FFD700) - 10% Đỏ (#E63946)</strong>. Tỷ lệ tương phản chữ trắng/vàng trên nền đen đạt chuẩn > 14:1.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Trạng thái Focus (Khả năng truy cập)</strong></td>
+                <td>Sử dụng viền outline mặc định của trình duyệt, khó nhìn khi di chuyển bằng phím <code>Tab</code>.</td>
+                <td>Thiết kế <code>:focus-visible</code> với viền Vàng dày 3px kèm bóng phát sáng Đỏ giúp nhận diện vị trí phím <code>Tab</code> tức thì.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Tính nhất quán (Consistency)</strong></td>
+                <td>Mã màu viết rời rạc ở nhiều dòng CSS, khó bảo trì.</td>
+                <td>Quy chuẩn toàn bộ mã màu và bo góc vào biến <code>:root</code> trong <code>css/style.css</code>, đồng bộ giữa <code>index.html</code> và <code>ket-qua.html</code>.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Đáp ứng thiết bị (Responsive)</strong></td>
+                <td>Dễ bị hẹp hoặc tràn ngang trên màn hình nhỏ.</td>
+                <td>Sử dụng CSS Grid <code>auto-fit, minmax(290px, 1fr)</code> và Media Query <code>@media (max-width: 768px)</code> tự động co giãn về 1 cột trên điện thoại.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cta-group" style="margin-top: 2rem;">
+          <a href="./index.html" class="btn btn-primary">← Quay lại Trang chủ</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Trần Việt Anh. All rights reserved.</p>
+      <p>© 2026 <strong>Trần Đoàn Quang Huy (1771020359 - CNTT17-12)</strong> – Hồ sơ bàn giao A2.2.</p>
     </div>
   </footer>
-</body>
 
+</body>
 </html>

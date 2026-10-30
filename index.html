@@ -1,231 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trần Việt Anh - Portfolio CV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="D:\CNTT20-04\portfolio\css\style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio v7 | Trần Đoàn Quang Huy - FIT4014</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
+
+  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#gioi-thieu">Việt Anh</a>
-      <nav aria-label="Menu chính">
-        <ul class="menu">
-          <li><a href="#gioi-thieu">Giới thiệu</a></li>
-          <li><a href="#ky-nang">Kỹ năng</a></li>
+    <div class="container navbar">
+      <a href="./index.html" class="brand-logo">
+        QUANG HUY <span class="brand-badge">v7.0</span>
+      </a>
+      <nav aria-label="Điều hướng chính">
+        <ul class="nav-links">
+          <li><a href="./index.html" class="active">Trang chủ</a></li>
           <li><a href="#du-an">Dự án</a></li>
-          <li><a href="#hoc-tap">Học tập</a></li>
-          <li><a href="#lien-he">Liên hệ</a></li>
+          <li><a href="#cai-tien-ui">Hệ màu 60-30-10</a></li>
+          <li><a href="./ket-qua.html">Kết quả & Kiểm chứng</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="noi-dung">
-    <section id="gioi-thieu" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="hero-role">
-            Sinh viên năm nhất, ngành Công nghệ Thông tin
-          </p>
-
-          <h1>Trần Việt Anh</h1>
-
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="version-pill">
+            <span class="version-dot"></span>
+            Phiên bản bàn giao A2.2 - Portfolio v7
+          </div>
+          <h1>Xin chào, tôi là <span class="highlight-gold">Trần Đoàn Quang Huy</span></h1>
           <p>
-            Mình là sinh viên CNTT, hiện đang tập trung xây dựng nền tảng lập
-            trình và phát triển kỹ năng thực tế. Mình đang học C++ từ những
-            kiến thức cơ bản, đồng thời tìm hiểu HTML và CSS để xây dựng các
-            trang web đơn giản. Mục tiêu hiện tại là nắm chắc nền tảng lập
-            trình và từng bước phát triển theo định hướng AI và Security.
+            Sinh viên năm 3 ngành Công nghệ Thông tin tại <strong>Trường Đại học Đại Nam</strong> (Lớp CNTT17-12 | MSSV: 1771020359). 
+            Định hướng phát triển Full-stack Web Application (.NET, VueJS, Next.js, RESTful Microservices) và tối ưu hóa trải nghiệm giao diện người dùng.
           </p>
-
-          <a class="button" href="#du-an">Xem dự án</a>
+          <div class="cta-group">
+            <a href="#du-an" class="btn btn-primary">Xem dự án tiêu biểu</a>
+            <a href="./ket-qua.html" class="btn btn-outline-gold">Hồ sơ kiểm chứng v7</a>
+          </div>
+          <div class="skill-tags" aria-label="Kỹ năng công nghệ">
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">JavaScript / VueJS</span>
+            <span class="skill-tag">C# .NET 9.0</span>
+            <span class="skill-tag">SQL Server / PostgreSQL</span>
+            <span class="skill-tag">Git & GitHub Pages</span>
+          </div>
         </div>
 
-        <img class="avatar" src="assets/791975572_1060704449904978_7434436045093909714_n.jpg"
-          alt="Ảnh đại diện minh họa của Trần Việt Anh" />
+        <div class="hero-avatar-box">
+          <img 
+            src="./assets/791975572_1060704449904978_7434436045093909714_n.jpg" 
+            onerror="this.onerror=null; this.src='./assets/avatar.svg';" 
+            alt="Ảnh đại diện Trần Đoàn Quang Huy" 
+            class="avatar-img"
+          >
+          <div class="student-meta">
+            <strong>Trần Đoàn Quang Huy</strong>
+            <span>MSSV: 1771020359 • Lớp: CNTT17-12</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="ky-nang" class="section">
+    <!-- Danh sách dự án (Sử dụng đúng tài nguyên trong thư mục assets/) -->
+    <section id="du-an">
       <div class="container">
-        <h2>Kỹ năng</h2>
+        <div class="section-header">
+          <h2>Dự Án Phần Mềm Tiêu Biểu</h2>
+          <p>Các sản phẩm thực hành và dự án cá nhân được quản lý phiên bản trên GitHub</p>
+        </div>
 
-        <ul class="skills">
-          <li>C++ cơ bản: biến, kiểu dữ liệu, nhập xuất và công thức</li>
-          <li>HTML5: xây dựng cấu trúc trang web</li>
-          <li>CSS3: định dạng giao diện và Responsive cơ bản</li>
-          <li>Visual Studio Code: viết và quản lý mã nguồn</li>
-          <li>Git/GitHub: đang làm quen và học cách quản lý mã nguồn</li>
-          <li>Làm việc nhóm và phối hợp trong các hoạt động học tập</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="du-an" class="section section-alt">
-      <div class="container">
-        <h2>Dự án</h2>
-
-        <div class="projects">
+        <div class="grid-3">
+          <!-- Dự án 1 -->
           <article class="card">
-            <img src="assets/du-an-1.svg" alt="Giao diện dòng lệnh của chương trình C++" />
-
-            <h3>Chương trình C++ cơ bản</h3>
-
-            <p>
-              Các bài tập thực hành C++ tập trung vào biến, kiểu dữ liệu, nhập
-              xuất và xây dựng các chương trình tính toán đơn giản.
-            </p>
-
-            <span class="pending-link">
-              github.com/tranvietanh (liên kết cần cập nhật)
-            </span>
+            <img src="./assets/du-an-1.svg" alt="Minh họa Dự án 1 - Hệ thống Web" class="card-thumb">
+            <div class="card-body">
+              <div>
+                <span class="card-tag">Full-Stack Web</span>
+                <h3>Dự án 1: Nền tảng Đặt Đồng Phục HUNI</h3>
+                <p>Hệ thống đặt may đồng phục số lượng lớn không phân biệt nam nữ, phân quyền người dùng và quản lý đơn hàng trực tuyến.</p>
+              </div>
+              <a href="./ket-qua.html" class="btn btn-outline-gold">Chi tiết & Kết quả</a>
+            </div>
           </article>
 
+          <!-- Dự án 2 -->
           <article class="card">
-            <img src="assets/du-an-2.svg" alt="Giao diện trang web cá nhân" />
-
-            <h3>Portfolio CV cá nhân</h3>
-
-            <p>
-              Trang web cá nhân được xây dựng bằng HTML và CSS nhằm áp dụng
-              kiến thức đã học trên lớp và làm quen với việc tổ chức một
-              website hoàn chỉnh.
-            </p>
-
-            <span class="pending-link">
-              github.com/tranvietanh/portfolio (liên kết cần cập nhật)
-            </span>
+            <img src="./assets/du-an-2.svg" alt="Minh họa Dự án 2 - Quản trị doanh nghiệp" class="card-thumb">
+            <div class="card-body">
+              <div>
+                <span class="card-tag">Enterprise / Backend</span>
+                <h3>Dự án 2: Tích hợp Quản lý Bán hàng & Nhân sự</h3>
+                <p>Xây dựng các phân hệ quản lý quy trình nghiệp vụ, cơ sở dữ liệu quan hệ và API phục vụ báo cáo thời gian thực.</p>
+              </div>
+              <a href="./ket-qua.html" class="btn btn-outline-gold">Chi tiết & Kết quả</a>
+            </div>
           </article>
 
+          <!-- Dự án 3 -->
           <article class="card">
-            <img src="assets/du-an-3.svg" alt="Trang web thực hành HTML và CSS" />
-
-            <h3>Website thực hành HTML & CSS</h3>
-
-            <p>
-              Dự án thực hành xây dựng giao diện web cơ bản, tập trung vào
-              HTML5, CSS3 và Responsive Web Design.
-            </p>
-
-            <span class="pending-link">
-              github.com/tranvietanh/web-project (liên kết cần cập nhật)
-            </span>
+            <img src="./assets/du-an-3.svg" alt="Minh họa Dự án 3 - Portfolio v7" class="card-thumb">
+            <div class="card-body">
+              <div>
+                <span class="card-tag">UI/UX & GitHub Pages</span>
+                <h3>Dự án 3: Portfolio Cá Nhân Phiên Bản v7</h3>
+                <p>Cải tiến giao diện theo tỷ lệ màu Đen - Vàng - Đỏ (60-30-10), tối ưu độ tương phản, trạng thái focus và triển khai CI/CD trên GitHub Pages.</p>
+              </div>
+              <a href="./ket-qua.html" class="btn btn-primary">Xem kiểm chứng A2.2</a>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="hoc-tap" class="section">
+    <!-- Giải thích cải tiến giao diện (Phục vụ trực tiếp TC5a) -->
+    <section id="cai-tien-ui">
       <div class="container">
-        <h2>Học tập</h2>
+        <div class="section-header">
+          <h2>Cải Tiến Giao Diện v7: Tỉ Lệ Màu Đen - Vàng - Đỏ (60-30-10)</h2>
+          <p>Minh chứng thiết kế đáp ứng tiêu chí A2.2.TC5a (Độ tương phản, tính nhất quán, Focus State & Responsive)</p>
+        </div>
 
-        <table class="study">
-          <thead>
-            <tr>
-              <th>Học kỳ</th>
-              <th>Học phần tiêu biểu</th>
-              <th>Sản phẩm</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>HK1</td>
-              <td>Nhập môn Công nghệ Thông tin</td>
-              <td>Các bài tập lập trình C++ cơ bản</td>
-            </tr>
-
-            <tr>
-              <td>HK1</td>
-              <td>Thiết kế web</td>
-              <td>Portfolio CV này</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="ratio-grid">
+          <div class="ratio-box">
+            <h3>60% Màu Đen (#0B0B0E)</h3>
+            <p>Đóng vai trò màu nền chủ đạo (Dominant Color), tạo chiều sâu thị giác, làm nổi bật hoàn toàn chữ trắng và giảm mỏi mắt khi đọc hồ sơ.</p>
+          </div>
+          <div class="ratio-box">
+            <h3>30% Màu Vàng (#FFD700)</h3>
+            <p>Màu thứ cấp (Secondary Color) dùng cho tiêu đề H1-H3, đường viền thẻ Card, thanh điều hướng và đường viền <code>:focus-visible</code> khi điều hướng bằng bàn phím.</p>
+          </div>
+          <div class="ratio-box">
+            <h3>10% Màu Đỏ (#E63946)</h3>
+            <p>Màu nhấn (Accent Color) tập trung vào các nút hành động chính (CTA Button), huy hiệu phiên bản v7.0 và hiệu ứng đổ bóng khi di chuột (Hover).</p>
+          </div>
+        </div>
       </div>
     </section>
-
-
-    <section id="lien-he" class="section section-alt">
-      <div class="container">
-        <h2>Liên hệ</h2>
-
-        <ul class="contact">
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:vanh7598@gmail.com">
-              vanh7598@gmail.com
-            </a>
-          </li>
-
-          <li>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/vanhkazen" target="_blank" rel="noopener noreferrer">
-              github.com/vanhkazen
-            </a>
-          </li>
-
-          <li>
-            <strong>Lớp:</strong> Công nghệ Thông tin 20-04
-          </li>
-        </ul>
-
-        <!-- Form liên hệ - Lab 5 -->
-        <form action="ket-qua.html" method="get" class="contact-form">
-          <h3>Gửi lời nhắn</h3>
-          <p>Vui lòng nhập đầy đủ thông tin bên dưới.</p>
-
-          <div class="form-group">
-            <label for="fullname">Họ và tên:</label>
-            <input type="text" id="fullname" name="fullname" minlength="2" required aria-describedby="fullname-help" />
-            <small id="fullname-help">
-              Họ tên phải có ít nhất 2 ký tự.
-            </small>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required aria-describedby="email-help" />
-            <small id="email-help">
-              Nhập đúng định dạng email.
-            </small>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Lời nhắn:</label>
-            <textarea id="message" name="message" rows="5" minlength="10" maxlength="500" required
-              aria-describedby="message-help"></textarea>
-            <small id="message-help">
-              Nội dung từ 10 đến 500 ký tự.
-            </small>
-          </div>
-
-          <button type="submit" class="button">
-            Gửi lời nhắn
-          </button>
-
-          <p class="form-note">
-            Đây là form thực hành, chưa gửi email thật
-            và không lưu dữ liệu lên máy chủ.
-            Dữ liệu nhập sẽ xuất hiện trên URL trang kết quả.
-          </p>
-        </form>
-      </div>
-    </section>
-
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Trần Việt Anh. All rights reserved.</p>
+      <p>© 2026 <strong>Trần Đoàn Quang Huy (1771020359 - CNTT17-12)</strong>. Học phần Thiết kế Web và triển khai hệ thống phần mềm – FIT4014.</p>
     </div>
   </footer>
-</body>
 
+</body>
 </html>
